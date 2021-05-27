@@ -1,0 +1,93 @@
+.Paintings h1 {
+  font-size: 60px;
+  padding-top: 1em;
+}
+
+.paintings_container {
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.paintings_wrapper {
+  position: relative;
+  margin: 50px 0 45px;
+}
+.paintings_items {
+  margin-bottom: 24px;
+}
+
+.cards_item {
+  display: flex;
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.cards_item_link {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.cards_item_pic_wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 67%;
+  overflow: hidden;
+}
+
+.cards_item_pic_wrap::after {
+  content: attr(data-category);
+  position: absolute;
+  bottom: 0;
+  margin-left: 10px;
+  padding: 6px 8px;
+  max-width: calc((100%) - 60px);
+  color: rgb(255, 255, 240);
+  background-color: rgb(52, 54, 97);
+  box-sizing: border-box;
+}
+
+.cards_item_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cards_item_info {
+  padding: 20px 30px 30px;
+}
+
+.cards_item_text {
+  color: rgb(52, 54, 97);
+}
+
+@media only screen and (min-width: 1024px) {
+  .paintings_items {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cards_item {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .Paintings h1 {
+    font-size: 40px;
+    padding: 20px;
+  }
+}
