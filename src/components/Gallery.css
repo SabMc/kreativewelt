@@ -61,21 +61,6 @@
   font-size: 16px;
 }
 
-.modal_content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.vertical {
-  height: 100%;
-  width: auto;
-}
-.horizontal {
-  width: 100%;
-  height: auto;
-}
-
 @media only screen and (min-width: 1024px) {
   .gallery_items {
     display: flex;

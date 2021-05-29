@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
+import { FaTimes } from "react-icons/fa";
+
+import "./Gallery.css";
 
 Modal.setAppElement("#root");
 
@@ -10,7 +13,14 @@ const costumStyles = {
     border: "none",
     padding: "40px",
     bottom: "20px",
+    height: "90%",
+    textAlign: "center",
   },
+};
+
+const imgStyles = {
+  maxHeight: "500px",
+  width: "auto",
 };
 
 function Presentation(props) {
@@ -36,22 +46,25 @@ function Presentation(props) {
             {props.details} <br /> {props.size}
           </h5>
         </div>
-        <div className="modal_wrapper">
+        <div>
           <Modal
             isOpen={isOpen}
             onRequestClose={toggleModal}
             style={costumStyles}
           >
-            <div>
-              <div className="modal_content">
-                <img
-                  src={props.src}
-                  alt={props.alt}
-                  className={props.className}
-                  onClick={toggleModal}
-                />{" "}
-              </div>
-              <button onClick={toggleModal}>Close it</button>{" "}
+            <div className="modal_icon">
+              <FaTimes
+                onClick={toggleModal}
+                style={{ color: "white", float: "left" }}
+              />
+            </div>
+            <div className="modal_img">
+              <img
+                src={props.src}
+                alt={props.alt}
+                onClick={toggleModal}
+                style={imgStyles}
+              />
             </div>
           </Modal>
         </div>
