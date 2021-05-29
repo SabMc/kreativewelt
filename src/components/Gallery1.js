@@ -6,6 +6,9 @@ import "./Gallery.css";
 import pH9 from "./images/pH9.jpg";
 import pH13 from "./images/pH13.jpg";
 import titelbild from "./images/titelbild.jpg";
+import pH2 from "./images/pH2.jpg";
+import pH3 from "./images/pH3.jpg";
+import pH5 from "./images/pH5.jpg";
 
 //import { Gallery1Items } from "./Gallery1Items";
 
@@ -40,6 +43,33 @@ function Gallery1() {
               details="Blaues Bild"
               size="100x140 cm"
               className="vertical"
+            />
+          </div>
+          <div className="gallery_wrapper">
+            <Presentation
+              src={pH2}
+              alt="Isle of Wight"
+              details="Isle of wight"
+              size="100x140 cm"
+              className="horizontal"
+            />
+          </div>
+          <div className="gallery_wrapper">
+            <Presentation
+              src={pH3}
+              alt="Isle of Wight"
+              details="Isle of wight"
+              size="100x140 cm"
+              className="horizontal"
+            />
+          </div>
+          <div className="gallery_wrapper">
+            <Presentation
+              src={pH5}
+              alt="Isle of Wight"
+              details="Isle of wight"
+              size="100x140 cm"
+              className="horizontal"
             />
           </div>
         </div>
