@@ -8,7 +8,7 @@
 }
 
 .Placeholder h1 {
-  color: rgb(255, 255, 240);
+  color: rgb(255, 255, 255);
   font-weight: 100;
   font-size: 120px;
   padding: 40px;
@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 960px) {
   .Placeholder h1 {
-    color: rgb(255, 255, 240);
+    color: rgb(255, 255, 255);
 
     font-size: 80px;
     padding: 20px 40px;
