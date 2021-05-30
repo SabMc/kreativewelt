@@ -16,7 +16,9 @@ function Gallery1() {
   return (
     <>
       <div className="Gallery">
-        <h1>Alle abstrakten Bilder</h1>
+        <div className="Titel">
+          <h1>ABSTRAKT</h1>
+        </div>
         <div className="gallery_container">
           <div className="gallery_wrapper">
             <Presentation
