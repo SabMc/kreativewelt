@@ -11,10 +11,9 @@ const costumStyles = {
   content: {
     backgroundColor: "black",
     border: "none",
-    padding: "40px",
-    bottom: "20px",
-    height: "90%",
-    textAlign: "center",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
 };
 
@@ -52,12 +51,6 @@ function Presentation(props) {
             onRequestClose={toggleModal}
             style={costumStyles}
           >
-            <div className="modal_icon">
-              <FaTimes
-                onClick={toggleModal}
-                style={{ color: "white", float: "left" }}
-              />
-            </div>
             <div className="modal_img">
               <img
                 src={props.src}
@@ -65,6 +58,9 @@ function Presentation(props) {
                 onClick={toggleModal}
                 style={imgStyles}
               />
+            </div>
+            <div className="modal_icon">
+              <FaTimes onClick={toggleModal} style={{ color: "white" }} />
             </div>
           </Modal>
         </div>
