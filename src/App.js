@@ -1,19 +1,18 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
+
+import Home from "./pages/Home";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Gallery1 from "./components/Gallery1";
-import Gallery2 from "./components/Gallery2";
-import Gallery3 from "./components/Gallery3";
-import Paintings from "./components/Paintings";
-import Exhibition from "./components/Exhibition";
+import Gallery1 from "./pages/Gallery1";
+import Gallery2 from "./pages/Gallery2";
+import Gallery3 from "./pages/Gallery3";
+import Paintings from "./pages/Paintings";
+import Exhibition from "./pages/Exhibition";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/Paintings" component={Paintings} />

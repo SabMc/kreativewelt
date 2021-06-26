@@ -3,7 +3,20 @@
   display: grid;
   grid-template-columns: 150px 1fr;
 }
+.back-arrow{
+  position: fixed;
+  z-index: 1;
+  margin-left:10px;
+  background: grey;
+  padding:15px;
+  border-radius:50%;
+}
 
+.arrow{
+  color: rgb(255, 255, 255);
+  height:4em;
+  
+}
 .Gallery h1 {
   margin-top: 20px;
   font-size: 60px;

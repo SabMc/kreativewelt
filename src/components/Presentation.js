@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import { FaTimes } from "react-icons/fa";
 
-import "./Gallery.css";
-
 Modal.setAppElement("#root");
 
 const costumStyles = {
-  overlay: { backgroundColor: "black", top: "80px" },
+  overlay: { backgroundColor: "black"},
   content: {
     backgroundColor: "black",
     border: "none",
@@ -18,7 +16,7 @@ const costumStyles = {
 };
 
 const imgStyles = {
-  maxHeight: "500px",
+  maxHeight: "600px",
   width: "auto",
 };
 

@@ -1,16 +1,14 @@
 import React from "react";
-import About from "./About";
-import Contact from "./Contact";
+import Navbar from "../components/Navbar";
+import About from "../components/About";
+import Contact from "../components/Contact";
 
-import "./Home.css";
 
 function Home() {
   return (
     <>
       <div className="Home">
-        <div className="Placeholder">
-          <h1>Lilly's Kreative Welt</h1>
-        </div>
+      <Navbar />
         <About />
         <Contact />
       </div>

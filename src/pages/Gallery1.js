@@ -1,21 +1,26 @@
 import React from "react";
 import "../App.css";
-import Presentation from "./Presentation";
+import Presentation from "../components/Presentation";
 import "./Gallery.css";
+import { Link } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa";
 
-import pH9 from "./images/pH9.jpg";
-import pH13 from "./images/pH13.jpg";
-import titelbild from "./images/titelbild.jpg";
-import pH2 from "./images/pH2.jpg";
-import pH3 from "./images/pH3.jpg";
-import pH5 from "./images/pH5.jpg";
-
-//import { Gallery1Items } from "./Gallery1Items";
+import pH9 from "../components/images/pH9.jpg";
+import pH13 from "../components/images/pH13.jpg";
+import titelbild from "../components/images/titelbild.jpg";
+import pH2 from "../components/images/pH2.jpg";
+import pH3 from "../components/images/pH3.jpg";
+import pH5 from "../components/images/pH5.jpg";
 
 function Gallery1() {
   return (
     <>
       <div className="Gallery">
+      <div className="back-arrow">
+      <Link to="/Paintings" className="link-retour" >
+                <FaArrowLeft className="arrow" />
+              </Link>
+        </div>
         <div className="Titel">
           <h1>ABSTRAKT</h1>
         </div>
@@ -26,7 +31,6 @@ function Gallery1() {
               alt="Isle of Wight"
               details="Isle of wight"
               size="100x140 cm"
-              className="horizontal"
             />
           </div>
           <div className="gallery_wrapper">
@@ -35,7 +39,6 @@ function Gallery1() {
               alt="The Needles"
               details="The Needles"
               size="100x140 cm"
-              className="horizontal"
             />
           </div>
           <div className="gallery_wrapper">
@@ -44,7 +47,6 @@ function Gallery1() {
               alt="Blaues Bild"
               details="Blaues Bild"
               size="100x140 cm"
-              className="vertical"
             />
           </div>
           <div className="gallery_wrapper">
@@ -53,7 +55,6 @@ function Gallery1() {
               alt="Isle of Wight"
               details="Isle of wight"
               size="100x140 cm"
-              className="horizontal"
             />
           </div>
           <div className="gallery_wrapper">
@@ -62,7 +63,6 @@ function Gallery1() {
               alt="Isle of Wight"
               details="Isle of wight"
               size="100x140 cm"
-              className="horizontal"
             />
           </div>
           <div className="gallery_wrapper">
@@ -71,7 +71,6 @@ function Gallery1() {
               alt="Isle of Wight"
               details="Isle of wight"
               size="100x140 cm"
-              className="horizontal"
             />
           </div>
         </div>

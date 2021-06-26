@@ -1,15 +1,16 @@
 import React from "react";
-import CardItem from "./CardItem";
+import CardItem from "../components/CardItem";
+import Navbar from "../components/Navbar";
 
 import "./Exhibition.css";
 
-import pH9 from "./images/pH9.jpg";
-import pH13 from "./images/pH13.jpg";
+import pH9 from "../components/images/pH9.jpg";
+import pH13 from "../components/images/pH13.jpg";
 
 function Exhibition() {
   return (
     <>
-      {" "}
+      <Navbar />
       <div className="Exhibition">
         <h1>Ausstellungen von Lilly's Kreativer Welt</h1>
       </div>{" "}
@@ -21,13 +22,13 @@ function Exhibition() {
               src={pH9}
               text="Ausstellung in xy"
               label="xy"
-              path="/Gallery1"
+              path="#"
             />
             <CardItem
               src={pH13}
               text="Ausstellung in zw"
               label="zw"
-              path="/Gallery2"
+              path="#"
             />
           </ul>{" "}
         </div>

@@ -1,15 +1,16 @@
 import React from "react";
-import CardItem from "./CardItem";
+import CardItem from "../components/CardItem";
+import Navbar from "../components/Navbar";
 
-import pH9 from "./images/pH9.jpg";
-import pH13 from "./images/pH13.jpg";
+import pH9 from "../components/images/pH9.jpg";
+import pH13 from "../components/images/pH13.jpg";
 
 import "./Paintings.css";
 
 function Paintings() {
   return (
     <>
-      {" "}
+      <Navbar />
       <div className="Paintings">
         <h1>Bilder von Lilly's Kreativer Welt</h1>
       </div>{" "}
